@@ -1,1 +1,76 @@
-Ntrcnjdfz cnhfybwf
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семестровая работа</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+    <!-- Изменение: Заменили div на семантические теги -->
+    <div class="page-container">
+        <header class="header"> <!-- Было: <div class="header"> -->
+            <h1>Хэдер</h1> <!-- Добавили заголовок для семантики -->
+        </header>
+        <nav class="nav"> <!-- Было: <div class="nav"> -->
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        <main class="content"> <!-- Было: <div class="content"> -->
+            <article class="profile-header"> <!-- Было: <div class="profileheader"> -->
+                <h1 class="profile-title">Информация об авторе</h1>
+                <img class="profile-photo" src="images/photo_2025-10-02_13-35-01.jpg" alt="Фото
+автора">
+                <h2 class="profile-name">Иванов Александр Димитриевич</h2>
+                <p class="profile-group">ЭФБО-02-24</p>
+            </article>
+
+            <section class="about-me"> <!-- Было: <div class="about-me"> -->
+                <h2>Обо мне</h2> <!-- Добавили заголовок для семантики -->
+                <p>Обо мне: Я родился в подвале мне Лежал на диване. Ел бутерброды Убил корову Хотел стать программистом потсупил в МИРЭА.</p>
+            </section>
+
+            <section class="skills-container"> <!-- Было: <div class="skillscontainer"> -->
+                <h2>Мои навыки</h2> <!-- Добавили заголовок для семантики -->
+                <div class="skills-grid"> <!-- Обертка для Grid -->
+                    <div class="skill-tag">Навык 1</div>
+                    <div class="skill-tag">Навык 2</div>
+                    <div class="skill-tag">Навык 3</div>
+                    <div class="skill-tag">Навык 4</div>
+                </div>
+            </section>
+
+            <section class="experience-section"> <!-- Было: <div
+class="experience-section"> -->
+                <h2 class="section-title">Мой опыт работы</h2>
+                <div class="experience-grid"> <!-- Обертка для Grid -->
+                    <article class="experience-card"> <!-- Было: <div
+class="experience-card"> -->
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">РАботал в древнем Египте строил пирамиды</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Работал кибеорспортсменом играл в танки</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Работал балериной танцевал балет.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"> <!-- Было: <div class="footer"> -->
+            <p>Футер</p> <!-- Добавили параграф для семантики -->
+        </footer>
+    </div>
+</body>
+
+</html>
