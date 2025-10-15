@@ -1,4 +1,3 @@
-/* ===== БАЗОВЫЕ СТИЛИ ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -7,15 +6,12 @@ body {
     min-height: 100vh;
 }
 
-/* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
-/* ИЗМЕНЕНИЕ: Добавили CSS Grid для основного макета страницы */
 .page-container {
     max-width: 1200px;
     margin: 0 auto;
     background: white;
     min-height: 100vh;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    /* Новое: Сеточный макет для семантических областей */
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas:
@@ -25,7 +21,6 @@ body {
         "footer";
 }
 
-/* ===== ШАПКА ===== */
 .header {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
@@ -34,15 +29,12 @@ body {
     font-size: 28px;
     font-weight: 300;
     letter-spacing: 2px;
-    /* Новое: Привязка к области сетки */
     grid-area: header;
 }
 
-/* ===== НАВИГАЦИЯ ===== */
 .nav {
     background: #2c3e50;
     padding: 20px 0;
-    /* Новое: Привязка к области сетки */
     grid-area: nav;
 }
 
@@ -73,17 +65,13 @@ body {
     transform: translateY(-2px);
 }
 
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
-/* ИЗМЕНЕНИЕ: Заменили .content на main для семантики */
 main.content {
     padding: 40px;
     max-width: 900px;
     margin: 0 auto;
-    /* Новое: Привязка к области сетки */
     grid-area: main;
 }
 
-/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
 .profile-header {
     text-align: center;
     margin-bottom: 40px;
@@ -129,8 +117,6 @@ main.content {
     line-height: 1.8;
 }
 
-/* ===== НАВЫКИ ===== */
-/* ИЗМЕНЕНИЕ: Добавили CSS Grid для навыков */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -155,7 +141,6 @@ main.content {
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
 }
 
-/* ===== ОПЫТ РАБОТЫ ===== */
 .experience-section {
     margin-top: 50px;
 }
@@ -168,7 +153,6 @@ main.content {
     font-weight: 300;
 }
 
-/* ИЗМЕНЕНИЕ: Добавили CSS Grid для карточек опыта */
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -201,7 +185,6 @@ main.content {
     margin: 0;
 }
 
-/* ===== НОВОСТИ ===== */
 .news-container {
     display: grid;
     gap: 25px;
@@ -310,19 +293,15 @@ main.content {
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
 
-/* ===== ФУТЕР ===== */
 .footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     text-align: center;
     padding: 30px;
     margin-top: 50px;
-    /* Новое: Привязка к области сетки */
     grid-area: footer;
 }
 
-/* ===== АДАПТИВНОСТЬ ===== */
-/* Новое: Медиа-запросы для мобильных устройств */
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -443,7 +422,6 @@ main.content {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* Адаптивность для новых элементов */
 @media (max-width: 768px) {
     .contact-grid {
         grid-template-columns: 1fr;
@@ -458,7 +436,6 @@ main.content {
     }
 }
 
-/* Стили для модального окна */
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.6);
     animation: fadeIn 0.3s ease;
@@ -592,7 +569,6 @@ dialog {
     }
 }
 
-/* Адаптивность */
 @media (max-width: 600px) {
     dialog {
         margin: 1rem;
