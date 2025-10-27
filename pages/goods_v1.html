@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body class="light-theme">
+    <div class="page">
+        <header class="header">
+            <h1 class="header__title">Моё портфолио</h1>
+        </header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                <li class="nav__item"><a class="nav__link" href="practices.html">Практики</a></li>
+                <li class="nav__item nav__item--active"><a class="nav__link" href="goods.html">Товары</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <button class="change-theme__button" onclick="changeTheme()">Сменить тему</button>
+        </nav>
+
+        <main class="content">
+            <section class="products-section">
+                <h2 class="section-title">Каталог товаров</h2>
+                <p class="section-description">Мы предлагаем широкий ассортимент качественных товаров по доступным ценам</p>
+
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/product-1.jpg" alt="Тапки">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Тапки</h3>
+                            <p class="product-description">Самые удобные тапки рыбы</p>
+                            <p class="product-price">10 ₽</p>
+                            <button class="product-button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/product-3.jpg" alt="Крыса с крекером">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Крыса с крекером</h3>
+                            <p class="product-description">Самая добрая милая вкусная и хрустящая крыса с крекером</p>
+                            <p class="product-price">6 ₽</p>
+                            <button class="product-button">В корзину</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-image-container">
+                            <img class="product-image" src="../images/product-2.jpg" alt="Шапка корова">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Шапка корова</h3>
+                            <p class="product-description">Супер крутая теплая и розовая шапка летающей коровы</p>
+                            <p class="product-price">5 ₽</p>
+                            <button class="product-button">В корзину</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 Интернет-магазин. Все права защищены.</p>
+        </footer>
+    </div>
+    <script src="../scripts.js"></script>
+</body>
+</html>
